@@ -10,6 +10,6 @@ def login(username, password):
             return True
         else:
             return False
-    except Exception as e:
+    except IOError as e:
         print("I can't authenticate you.")
         return False
